@@ -13,6 +13,7 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
+      { hid: 'og:title', property: 'og:title', content: 'リリオのプロフィール' },
       { name: 'twitter:card', content: 'summary' },
       { name: 'twitter:site', content: '@ririo08' },
       { hid: 'og:image', property: 'og:image', content: 'https://pbs.twimg.com/profile_images/1121918283446247424/ZRgtg7CP_400x400.png' },
