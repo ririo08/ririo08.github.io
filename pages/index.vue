@@ -125,7 +125,7 @@
             <div class="listBox-container_text">
               <a
                 class="link"
-                href="https://ririotv.xyz/"
+                href="https://ririo08.github.io/Atsumori-clock-Overlay/"
                 target="_blank"
                 rel="noopener noreferrer"
                 >あつまれどうぶつの森の時計風オーバーレイ</a
