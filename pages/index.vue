@@ -85,7 +85,7 @@
             <div class="listBox-container_text">
               <a
                 class="link"
-                href="https://ririotv.xyz/"
+                href="https://ririo.dev/"
                 target="_blank"
                 rel="noopener noreferrer"
                 >リリオのホームページ</a
