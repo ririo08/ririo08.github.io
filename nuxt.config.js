@@ -1,4 +1,7 @@
 export default {
+  // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
+  ssr: false,
+
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -8,15 +11,40 @@ export default {
     htmlAttrs: {
       lang: 'ja'
     },
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' },
-      { hid: 'og:title', property: 'og:title', content: 'リリオのプロフィール' },
-      { name: 'twitter:card', content: 'summary' },
-      { name: 'twitter:site', content: '@ririo08' },
-      { hid: 'og:image', property: 'og:image', content: 'https://pbs.twimg.com/profile_images/1121918283446247424/ZRgtg7CP_400x400.png' },
+    meta: [{
+        charset: 'utf-8'
+      },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1'
+      },
+      {
+        hid: 'description',
+        name: 'description',
+        content: ''
+      },
+      {
+        name: 'format-detection',
+        content: 'telephone=no'
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: 'リリオのプロフィール'
+      },
+      {
+        name: 'twitter:card',
+        content: 'summary'
+      },
+      {
+        name: 'twitter:site',
+        content: '@ririo08'
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: 'https://pbs.twimg.com/profile_images/1121918283446247424/ZRgtg7CP_400x400.png'
+      },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -36,6 +64,8 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
+    // https://go.nuxtjs.dev/typescript
+    '@nuxt/typescript-build',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
