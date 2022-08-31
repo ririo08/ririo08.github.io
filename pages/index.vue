@@ -4,7 +4,7 @@
       <div class="header-imgbox">
         <img
           class="header-imgbox_content"
-          src="https://pbs.twimg.com/profile_images/1121918283446247424/ZRgtg7CP_400x400.png"
+          src="https://pbs.twimg.com/profile_images/1563860199802388480/k-M6Nr1C_400x400.png"
           alt=""
         />
       </div>
@@ -85,12 +85,12 @@
             <div class="listBox-container_text">
               <a
                 class="link"
-                href="https://ririo.dev/"
+                href="https://ririo.dev/homepage"
                 target="_blank"
                 rel="noopener noreferrer"
                 >リリオのホームページ</a
               >
-              <p class="url">https://ririotv.xyz/</p>
+              <p class="url">https://ririo.dev/homepage</p>
               <p class="detail">
                 自分のホームページです。NuxtをStaticでGithub
                 PagesにDeployして公開しています。（ルー語）
