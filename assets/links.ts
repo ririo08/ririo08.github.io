@@ -1,5 +1,37 @@
 export const links = [
   {
+    categoryName: "SNS",
+    contents: [
+      {
+        linkName: "Twitter",
+        url: "https://twitter.com/ririo08",
+        detail:
+          "最近イーロンさんが暴れてるので更新頻度は低め。\nフォローしてる人を見てはいます",
+        imageUrl: "img/icon/twitter.png",
+      },
+      {
+        linkName: "Mastodon (mstdn.jp)",
+        url: "https://mstdn.jp/@RirioCH",
+        detail:
+          "最近のメイン活動拠点にしがち。情報発信などもここが多かったり？",
+        imageUrl: "img/icon/mastodon.png",
+      },
+      {
+        linkName: "Bluesky",
+        url: "https://bsky.app/profile/ririo08.bsky.social",
+        detail:
+          "始めたて。全く見れてないしフォローもできてません。フォローﾖﾛｼｸﾈ！",
+        imageUrl: "img/icon/bluesky.png",
+      },
+      {
+        linkName: "Threads",
+        url: "https://www.threads.net/@ririo08",
+        detail: "Meta社のアレ。ホームスレッド使いづらすぎる",
+        imageUrl: "img/icon/threads.png",
+      },
+    ],
+  },
+  {
     categoryName: "映像コンテンツ等",
     contents: [
       {
