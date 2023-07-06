@@ -1,0 +1,36 @@
+// https://nuxt.com/docs/api/configuration/nuxt-config
+export default defineNuxtConfig({
+  devtools: { enabled: true },
+  ssr: false,
+
+  app: {
+    head: {
+      title: "リリオのプロフィール",
+      htmlAttrs: {
+        lang: "ja",
+      },
+      meta: [
+        {
+          hid: "og:title",
+          property: "og:title",
+          content: "リリオのプロフィール",
+        },
+        {
+          name: "twitter:card",
+          content: "summary",
+        },
+        {
+          name: "twitter:site",
+          content: "@ririo08",
+        },
+        {
+          hid: "og:image",
+          property: "og:image",
+          content:
+            "https://pbs.twimg.com/profile_images/1121918283446247424/ZRgtg7CP_400x400.png",
+        },
+      ],
+      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+    },
+  },
+})
