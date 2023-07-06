@@ -45,14 +45,6 @@ import { links } from "assets/links"
 </template>
 
 <style lang="scss" scoped>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: auto;
-  background-color: #faf1eb;
-}
 .container {
   max-inline-size: 100%;
   inline-size: 100%;

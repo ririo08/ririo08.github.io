@@ -30,7 +30,20 @@ export default defineNuxtConfig({
             "https://pbs.twimg.com/profile_images/1121918283446247424/ZRgtg7CP_400x400.png",
         },
       ],
-      link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
+      link: [
+        { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+        {
+          rel: "preconnect",
+          href: "https://fonts.googleapis.com",
+        },
+        {
+          rel: "stylesheet",
+          href: "https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@700&display=swap",
+          crossorigin: "",
+        },
+      ],
     },
   },
+
+  css: ["assets/scss/style.scss"],
 })
