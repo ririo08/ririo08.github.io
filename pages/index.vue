@@ -126,6 +126,7 @@ import { links } from "assets/links"
 .detail {
   font-size: 1rem;
   margin-top: 0;
+  white-space: pre-wrap;
 }
 
 @media screen and (max-width: 767px) {
