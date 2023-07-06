@@ -4,11 +4,6 @@ on:
   push:
     branches:
       - main
-      - master
-  pull_request:
-    branches:
-      - main
-      - master
 
 jobs:
   ci:
@@ -17,7 +12,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [14]
+        node: [20]
 
     steps:
       - name: Checkout 🛎
@@ -46,7 +41,7 @@ jobs:
         run: yarn
 
       - name: Nuxt Generate 💚
-        run: yarn run generate
+        run: yarn generate
 
       - name: Github Pages Deploy 🏳️
         uses: peaceiris/actions-gh-pages@v3
@@ -54,4 +49,3 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           FOLDER: dist
-
