@@ -1,12 +1,12 @@
+<script lang="ts" setup>
+import { links } from "assets/links"
+</script>
+
 <template>
   <div class="container">
     <header class="header">
       <div class="header-imgbox">
-        <img
-          class="header-imgbox_content"
-          src="https://pbs.twimg.com/profile_images/1563860199802388480/k-M6Nr1C_400x400.png"
-          alt=""
-        />
+        <img class="header-imgbox_content" src="~/assets/ririo.png" alt="" />
       </div>
       <h1 class="header-h1">リリオ</h1>
       <h2 class="header-h2">ririo08</h2>
@@ -15,176 +15,36 @@
       <div class="main">
         <p class="main-content">リリオさんの自己紹介をしましょう。</p>
         <p class="main-content">ゲーム実況者兼ストリーマーです。</p>
-        <h3>映像コンテンツ等</h3>
-        <ul class="listBox">
-          <li class="listBox-container">
-            <div class="listBox-container_img">
-              <img src="img/icon/youtube.png" alt="" />
-            </div>
-            <div class="listBox-container_text">
-              <a
-                class="link"
-                href="https://youtube.com/RirioTV"
-                target="_blank"
-                rel="noopener noreferrer"
-                >YouTubeチャンネル「リリオ」</a
-              >
-              <p class="url">https://youtube.com/RirioTV</p>
-              <p class="detail">
-                YouTuberとして動画を投稿しているチャンネル。主にゲーム実況を上げています。
-              </p>
-            </div>
-          </li>
-          <li class="listBox-container">
-            <div class="listBox-container_img">
-              <img src="img/icon/youtube.png" alt="" />
-            </div>
-            <div class="listBox-container_text">
-              <a
-                class="link"
-                href="https://www.youtube.com/channel/UCYYTax3608_cd88AY2oq39Q"
-                target="_blank"
-                rel="noopener noreferrer"
-                >YouTubeチャンネル「リリオの日常」</a
-              >
-              <p class="url">
-                https://www.youtube.com/channel/UCYYTax3608_cd88AY2oq39Q
-              </p>
-              <p class="detail">
-                シンプルにサブチャンネルです。低クオリティな動画が多め。
-              </p>
-            </div>
-          </li>
-          <li class="listBox-container">
-            <div class="listBox-container_img">
-              <img src="img/icon/youtube.png" alt="" />
-            </div>
-            <div class="listBox-container_text">
-              <a
-                class="link"
-                href="https://www.youtube.com/channel/UCyRnuuwAPPLaGLf_xGykMPA"
-                target="_blank"
-                rel="noopener noreferrer"
-                >YouTubeチャンネル「リリオの配信局」</a
-              >
-              <p class="url">
-                https://www.youtube.com/channel/UCyRnuuwAPPLaGLf_xGykMPA
-              </p>
-              <p class="detail">
-                基本的に生放送などの配信コンテンツはこちらで発信しています。ほぼ毎日やってます。
-              </p>
-            </div>
-          </li>
-        </ul>
-        <h3>Webサイト</h3>
-        <ul class="listBox">
-          <li class="listBox-container">
-            <div class="listBox-container_img">
-              <img src="img/icon/homepage.png" alt="" />
-            </div>
-            <div class="listBox-container_text">
-              <a
-                class="link"
-                href="https://ririo.dev/homepage"
-                target="_blank"
-                rel="noopener noreferrer"
-                >リリオのホームページ</a
-              >
-              <p class="url">https://ririo.dev/homepage</p>
-              <p class="detail">
-                自分のホームページです。NuxtをStaticでGithub
-                PagesにDeployして公開しています。（ルー語）
-              </p>
-            </div>
-          </li>
-          <li class="listBox-container">
-            <div class="listBox-container_img">
-              <img src="img/icon/blog.png" alt="" />
-            </div>
-            <div class="listBox-container_text">
-              <a
-                class="link"
-                href="https://ririogame.hatenablog.com//"
-                target="_blank"
-                rel="noopener noreferrer"
-                >リリオの日記型倉庫3</a
-              >
-              <p class="url">https://ririogame.hatenablog.com/</p>
-              <p class="detail">
-                はてなブログです。YouTubeを始めてから更新頻度は低め。
-              </p>
-            </div>
-          </li>
-        </ul>
-        <h3>OBSオーバーレイ等</h3>
-        <ul class="listBox">
-          <li class="listBox-container">
-            <div class="listBox-container_img">
-              <img src="https://ririo08.github.io/Atsumori-clock-Overlay/img/summary.jpg" alt="" />
-            </div>
-            <div class="listBox-container_text">
-              <a
-                class="link"
-                href="https://ririo08.github.io/Atsumori-clock-Overlay/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >あつまれどうぶつの森の時計風オーバーレイ</a
-              >
-              <p class="url">https://ririo08.github.io/Atsumori-clock-Overlay</p>
-              <p class="detail">
-                あつ森をプレイしているときに左下に出てくる時計を再現したOBS向けのオーバーレイです。<br>
-                実際に実時間に合わせて動きます。
-              </p>
-            </div>
-          </li>
-        </ul>
-        <h3>Web App</h3>
-        <ul class="listBox">
-          <li class="listBox-container">
-            <div class="listBox-container_img">
-              <img src="img/icon/nightcode.png" alt="" />
-            </div>
-            <div class="listBox-container_text">
-              <a
-                class="link"
-                href="https://ririo08.github.io/25-Night-Code/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >ナイトコードの作業を覗きに行くツール</a
-              >
-              <p class="url">https://ririo08.github.io/25-Night-Code/</p>
-              <p class="detail">
-                プロセカの24時間の作業BGMを実時間で再生できるツール
-              </p>
-            </div>
-          </li>
-          <li class="listBox-container">
-            <div class="listBox-container_img">
-              <img src="img/icon/javascript.png" alt="" />
-            </div>
-            <div class="listBox-container_text">
-              <a
-                class="link"
-                href="https://ririo08.github.io/Ririos-Script/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >リリオのスクリプト置き場</a
-              >
-              <p class="url">https://ririo08.github.io/Ririos-Script/</p>
-              <p class="detail">ブックマークレット類が置いてあります。</p>
-            </div>
-          </li>
-        </ul>
+        <div v-for="profiles of links">
+          <h3>{{ profiles.categoryName }}</h3>
+          <ul class="listBox">
+            <li v-for="profile of profiles.contents" class="listBox-container">
+              <div class="listBox-container_img">
+                <img :src="profile.imageUrl" alt="" />
+              </div>
+              <div class="listBox-container_text">
+                <a
+                  class="link"
+                  :href="profile.url"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {{ profile.linkName }}
+                </a>
+                <p class="url">{{ profile.url }}</p>
+                <p class="detail">
+                  {{ profile.detail }}
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
       </div>
     </main>
   </div>
 </template>
 
-<script>
-export default {};
-</script>
-
-<style lang="scss">
+<style lang="scss" scoped>
 * {
   box-sizing: border-box;
 }
@@ -276,7 +136,7 @@ body {
   margin-top: 0;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .container {
     padding-left: 5px;
     padding-right: 5px;
