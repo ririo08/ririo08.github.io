@@ -6,7 +6,12 @@ import { links } from "assets/links"
   <div class="container">
     <header class="header">
       <div class="header-imgbox">
-        <img class="header-imgbox_content" src="~/assets/ririo.png" alt="" />
+        <nuxt-img
+          format="webp"
+          class="header-imgbox_content"
+          src="ririo.png"
+          alt="犬のアイコン"
+        />
       </div>
       <h1 class="header-h1">リリオ</h1>
       <h2 class="header-h2">ririo08</h2>
@@ -20,7 +25,7 @@ import { links } from "assets/links"
           <ul class="listBox">
             <li v-for="profile of profiles.contents" class="listBox-container">
               <div class="listBox-container_img">
-                <img :src="profile.imageUrl" alt="" />
+                <nuxt-img format="webp" :src="profile.imageUrl" alt="" />
               </div>
               <div class="listBox-container_text">
                 <a
