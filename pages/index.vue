@@ -6,7 +6,11 @@ import { links } from "assets/links"
   <div class="container">
     <header class="header">
       <div class="header-imgbox">
-        <img class="header-imgbox_content" src="ririo.png" alt="犬のアイコン" />
+        <img
+          class="header-imgbox_content"
+          src="/img/ririo.png"
+          alt="犬のアイコン"
+        />
       </div>
       <h1 class="header-h1">リリオ</h1>
       <h2 class="header-h2">ririo08</h2>
