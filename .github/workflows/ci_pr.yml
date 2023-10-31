@@ -2,7 +2,7 @@ name: PR_ci
 
 on:
   pull_request:
-    branches: ["main"]
+    branches: ['main']
 
 jobs:
   ci:
@@ -15,13 +15,13 @@ jobs:
       - name: Setup node env 🏗
         uses: actions/setup-node@v3
         with:
-          node-version: "latest"
+          node-version: 'latest'
 
       - name: Setup Bun ☁️
         uses: oven-sh/setup-bun@v1
 
       - name: Install dependencies 👨🏻‍💻
-        run: bun install -y
+        run: bun install
 
       - name: Generate 💚
         run: yarn generate
