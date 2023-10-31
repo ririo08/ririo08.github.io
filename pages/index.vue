@@ -1,6 +1,4 @@
-<script lang="ts" setup>
-import { links } from "assets/links"
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <div class="container">
