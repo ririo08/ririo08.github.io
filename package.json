@@ -11,7 +11,7 @@
   "devDependencies": {
     "@nuxt/devtools": "latest",
     "@types/node": "^20",
-    "nuxt": "^3.8.0"
+    "nuxt": "^3.8.1"
   },
   "dependencies": {
     "@nuxt/image": "^1.0.0",
