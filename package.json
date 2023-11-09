@@ -1,7 +1,8 @@
 {
-  "name": "nuxt-app",
+  "name": "ririo08.github.io",
   "private": true,
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
@@ -10,11 +11,8 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@types/node": "^20",
-    "nuxt": "^3.8.1"
-  },
-  "dependencies": {
     "@nuxt/image": "^1.0.0",
+    "nuxt": "^3.8.1",
     "sass": "^1.69.5"
   },
   "prettier": {
