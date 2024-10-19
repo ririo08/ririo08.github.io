@@ -18,7 +18,7 @@ export const links = [
       },
       {
         linkName: "Bluesky",
-        url: "https://bsky.app/profile/ririo08.bsky.social",
+        url: "https://bsky.app/profile/ririo.dev",
         detail:
           "始めたて。全く見れてないしフォローもできてません。フォローﾖﾛｼｸﾈ！",
         imageUrl: "img/icon/bluesky.png",
