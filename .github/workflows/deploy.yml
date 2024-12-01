@@ -1,11 +1,16 @@
-name: Generate test
+name: Deploy output
 
 on:
-  pull_request:
+  push:
     branches: ['main']
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
-  generate_pr:
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -22,3 +27,12 @@ jobs:
 
       - name: Generate 💚
         run: bun generate
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .output/public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

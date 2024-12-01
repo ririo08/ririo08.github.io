@@ -8,7 +8,7 @@
           class="header-imgbox_content"
           src="/img/ririo.png"
           alt="犬のアイコン"
-        />
+        >
       </div>
       <h1 class="header-h1">リリオ</h1>
       <h2 class="header-h2">ririo08</h2>
@@ -17,12 +17,12 @@
       <div class="main">
         <p class="main-content">リリオさんの自己紹介をしましょう。</p>
         <p class="main-content">ゲーム実況者兼ストリーマーです。</p>
-        <div v-for="profiles of links">
+        <div v-for="(profiles, index) of links" :key="index">
           <h3>{{ profiles.categoryName }}</h3>
           <ul class="listBox">
-            <li v-for="profile of profiles.contents" class="listBox-container">
+            <li v-for="(profile, index2) of profiles.contents" :key="index2" class="listBox-container">
               <div class="listBox-container_img">
-                <img :src="profile.imageUrl" alt="" />
+                <img :src="profile.imageUrl" alt="" >
               </div>
               <div class="listBox-container_text">
                 <a
@@ -48,7 +48,7 @@
 
 <style lang="scss" scoped>
 .container {
-  max-inline-size: 100%;
+  max-inline-size: 1000px;
   inline-size: 100%;
   margin: auto;
   padding-left: 20px;
