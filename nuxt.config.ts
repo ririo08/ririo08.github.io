@@ -46,6 +46,24 @@ export default defineNuxtConfig({
   },
 
   css: ["assets/scss/style.scss"],
+  modules: ["@nuxt/eslint"],
 
-  modules: ["@nuxt/image"],
+  eslint: {
+    config: {
+      stylistic: true,
+      formatters: true,
+    },
+  },
+
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'modern-compiler',
+        },
+      },
+    },
+  },
+
+  compatibilityDate: "2024-12-02",
 })
